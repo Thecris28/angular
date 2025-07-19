@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+:root{
+    --background-app: #111827;
+}
+
+@theme inline {
+    --color-background: var(--background-app);
+}
