@@ -1,7 +1,9 @@
 <ul class="space-y-2 font-medium">
 @for (item of menuOption; track item.route) {
          <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a [routerLink]="item.route"
+            routerLinkActive="bg-gray-700"
+             class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <span [innerHTML]="item.icon">{{item.icon}}</span>
                <span class="ms-3">{{ item.label }}</span>
             </a>
